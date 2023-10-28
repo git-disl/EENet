@@ -1,6 +1,18 @@
-# WACV24 Submission
+# Adaptive Deep Neural Network Inference Optimization with EENet (WACV 2024)
 
-Code for EENet WACV24 submission
+Well-trained deep neural networks (DNNs) treat all test samples equally during prediction. Adaptive DNN inference with early exiting leverages the observation that some test examples can be easier to predict than others. This paper presents EENet, a novel early-exiting scheduling framework for multi-exit DNN models. Instead of having every sample go through all DNN layers during prediction, EENet learns an early exit scheduler, which can intelligently terminate the inference earlier for certain predictions, which the model has high confidence of early exit. As opposed to previous early-exiting solutions with heuristics-based methods, our EENet framework optimizes an early-exiting policy to maximize model accuracy while satisfying the given per-sample average inference budget. Extensive experiments are conducted on four computer vision datasets (CIFAR-10, CIFAR-100, ImageNet, Cityscapes) and two NLP datasets (SST-2, AgNews). The results demonstrate that the adaptive inference by EENet can outperform the representative existing early exit techniques. We also perform a detailed visualization analysis of the comparison results to interpret the benefits of EENet.
+
+## Citation
+
+If you find this repository useful, please cite our paper. Thank you!
+```
+@inproceedings{ilhan2023eenet,
+  title={Adaptive Deep Neural Network Inference Optimization with EENet},
+  author={Ilhan, Fatih and Chow, Ka-Ho and Huang, Tiansheng and Hu, Sihao and Tekin, Selim and Wei, Wenqi and Wu, Yanzhao and Lee, Myungjin and Kompella, Ramana and Latapie, Hugo and Liu, Gaowen and Liu, Ling},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2024}
+}
+```
 
 ## Setup
 Python 3.8
