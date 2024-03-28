@@ -17,9 +17,9 @@ from args import arg_parser, modify_args
 from config import Config
 from data_tools.dataloader import get_dataloaders
 from predict import validate
-from predict_utils import dynamic_evaluate
+from utils.predict_utils import dynamic_evaluate
 from train import train
-from utils import save_checkpoint, load_checkpoint, measure_flops, load_state_dict
+from utils.utils import save_checkpoint, load_checkpoint, measure_flops, load_state_dict
 
 # import sys
 # if all(['models' not in sys.path]):

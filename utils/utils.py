@@ -6,7 +6,7 @@ import shutil
 import models
 import torch
 
-from op_counter import measure_model
+from utils.op_counter import measure_model
 
 
 def save_checkpoint(state, args, is_best, filename, result, prec1_per_exit, prec5_per_exit):
